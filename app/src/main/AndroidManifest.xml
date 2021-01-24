@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.moviestack">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,6 +24,11 @@
         <activity android:name=".DramaMovieListActivity"/>
         <activity android:name=".ComedyMovieListActivity"/>
         <activity android:name=".AnimationMovieListActivity"/>
+
+        <activity android:name=".PlayerActivity"
+            android:screenOrientation="fullSensor"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Material.Dialog.NoActionBar.MinWidth"/>
 
         <meta-data
             android:name="preloaded_fonts"
