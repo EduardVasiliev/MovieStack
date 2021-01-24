@@ -1,2 +1,2 @@
 # MovieStack
-List of Movie Trailers
+Android App | List of Movie Trailers
